@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sayfa Başlığımız</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Sayfa Başlığı</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<form>
+    <input id="filter-for-listview" data-type="search" placeholder="Arama kelimesini yazın.">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter-for-listview">
+    <li><a href="webdesign.html" data-rel="dialog" data-transition="pop">Web Design</a></li>
+    <li><a href="mobileprog.html" data-rel="dialog" data-transition="pop">Mobile Programming</a></li>
+    <li><a href="webprog.html" data-rel="dialog" data-transition="pop">Web Programming</a></li>
+    <li><a href="robotics.html" data-rel="dialog" data-transition="pop">Robotics</a></li>
+    <li><a href="python.html" data-rel="dialog" data-transition="pop">Python Programming</a></li>
+</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Sayfa Altbilgisi</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
